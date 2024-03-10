@@ -75,15 +75,16 @@ bun run preview
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 # test-shop
 
-
+```bash
 Command git
 git add README.md เฉพาะไฟล์นี้
 git add . ไฟล์ที่ต้องการอัพเดท
 git status เช็คว่ามีอะไรอัพเดทบ้าง
 git commit -m "รายละเอียดการอัพ"
 git push -u origin main
+```
 
-
+```bash
 ตอนสร้าง Repo ครั้งแรก
 $ echo "# test-shop" >> README.md
 git init
@@ -93,3 +94,4 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin "แอดเข้า git ไหน" เช่น https://github.com/username/reponame.git
 git push -u origin main
+```
