@@ -95,3 +95,9 @@ git branch -M main
 git remote add origin "แอดเข้า git ไหน" เช่น https://github.com/username/reponame.git
 git push -u origin main
 ```
+
+
+
+```bash
+test
+```
