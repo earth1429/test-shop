@@ -15,6 +15,8 @@
                     <h2>Price: ${{ product.price }}</h2>
                     <h2>Category: {{ product.category }}</h2>
                     <h3>Brand: {{ product.brand }}</h3>
+                    <h3>Discount: {{ product.discountPercentage }}</h3>
+                    <h3>Rating: {{ product.rating }}</h3>
                     <h3>Description: {{ product.description }}</h3>
                 </div>
             </div>
