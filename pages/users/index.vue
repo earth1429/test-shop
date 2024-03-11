@@ -1,11 +1,11 @@
 <template>
     <div class="container">
-        <h1>Users</h1>
+        <span class="underline  text-4xl">Users</span>
     </div>
     <div class="container">
         <div v-for="user in data.users">
             <NuxtLink :to="`/users/${ user.id }`">
-                <h2 class="title"> {{ user.firstName }} {{ user.lastName }}</h2>
+                <p class="title"> {{ user.firstName }} {{ user.lastName }}</p>
                 <img :src=user.image>
             </NuxtLink>
 
@@ -40,7 +40,7 @@ console.log(data)
     background: #333;
 }
 
-.container h1{
+.underline{
     text-decoration: underline green;
 }
 
@@ -62,4 +62,6 @@ img{
 a{
     text-decoration: none;
 }
+
+
 </style>

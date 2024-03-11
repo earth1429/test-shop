@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-        <h1>หน้าหลักสินค้า</h1>
+        <span class="underline  text-4xl">หน้าหลักสินค้า</span>
     </div>
     <div class="container">
 
         <div v-for="product in data.products">
             <NuxtLink :to="`/products/${ product.id }`">
-                <h2 class="title"> {{ product.title }}</h2>
+                <p class="title"> {{ product.title }}</p>
                 <img :src=product.thumbnail>
             </NuxtLink>
 
@@ -41,7 +41,7 @@ const { data: data } = await useFetch('https://dummyjson.com/products?limit=10')
     background: #333;
 }
 
-.container h1{
+.underline{
     text-decoration: underline green;
 }
 

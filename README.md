@@ -101,3 +101,9 @@ git push -u origin main
 ```bash
 test
 ```
+
+```bash
+ติดตั้ง tailwind
+
+npm install --save-dev @nuxtjs/tailwindcss
+```

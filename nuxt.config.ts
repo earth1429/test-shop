@@ -9,8 +9,11 @@ export default defineNuxtConfig({
       ]
     }
   },
-  error: {
-    statusCode: 404,
-    message: 'Page not found'
-  },
+  css: [
+    '~/styles/tailwind.css',
+  ],
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ]
 })
+ 
