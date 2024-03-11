@@ -11,13 +11,27 @@
             <div class="container">
                 <img :src=product.thumbnail>
                 <div class="detail">
-                    <h1>Name: {{ product.title }}</h1>
-                    <h2>Price: ${{ product.price }}</h2>
-                    <h2>Category: {{ product.category }}</h2>
-                    <h3>Brand: {{ product.brand }}</h3>
-                    <h3>Discount: {{ product.discountPercentage }}</h3>
-                    <h3>Rating: {{ product.rating }}</h3>
-                    <h3>Description: {{ product.description }}</h3>
+
+                    <span class="text-4xl pt-2 font-bold">Name: </span>
+                    <span> {{ product.title }}</span><br>
+
+                    <span class="text-2xl pt-2 font-bold">Price: $</span>
+                    <span>{{ product.price }}</span><br>
+
+                    <span class="text-2xl pt-2 font-bold">Category: ></span>
+                    <span>{{ product.category }}</span><br>
+
+                    <span class="text-xl pt-2 font-bold">Brand: </span>
+                    <span>{{ product.brand }}</span><br>
+
+                    <span class="text-xl pt-2 font-bold">Discount: </span>
+                    <span>{{ product.discountPercentage }}</span><br>
+
+                    <span class="text-xl pt-2 font-bold">Rating: </span>
+                    <span>{{ product.rating }}</span><br>
+                    
+                    <span class="text-xl pt-2 font-bold">Description: </span>
+                    <span>{{ product.description }}</span><br>
                 </div>
             </div>
         </div>
@@ -44,5 +58,10 @@ console.log(product)
 .detail {
     padding-left: 10px;
 
+}
+
+img{
+    width: 300px;
+    height: 300px;
 }
 </style>

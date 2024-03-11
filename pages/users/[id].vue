@@ -11,12 +11,24 @@
             <div class="container">
                 <img :src=user.image>
                 <div class="detail">
-                    <h1>First Name: {{ user.firstName }}</h1>
-                    <h2>Last Name: {{ user.lastName }}</h2>
-                    <h2>Address: {{ user.address.address }}, {{ user.address.city }}, {{ user.address.postalCode }}</h2>
-                    <h3>Phone number: {{ user.phone }}</h3>
-                    <h3>BirthDate: {{ user.birthDate }}</h3>
-                    <h3>Age: {{ user.age }}</h3>
+
+                    <span class="text-4xl pt-2 font-bold">First Name: </span>
+                    <span> {{ user.firstName }}</span><br>
+
+                    <span class="text-2xl pt-2 font-bold">Last Name: </span>
+                    <span>{{ user.lastName }}</span><br>
+
+                    <span class="text-2xl pt-2 font-bold">Address: ></span>
+                    <span>{{ user.address.address }}, {{ user.address.city }}, {{ user.address.postalCode }}</span><br>
+
+                    <span class="text-xl pt-2 font-bold">Phone number: </span>
+                    <span>{{ user.phone }}</span><br>
+
+                    <span class="text-xl pt-2 font-bold">BirthDate: </span>
+                    <span>{{ user.birthDate }}</span><br>
+
+                    <span class="text-xl pt-2 font-bold">Age: </span>
+                    <span>{{ user.age }}</span><br>
                 </div>
             </div>
         </div>
@@ -43,5 +55,10 @@ console.log(user)
 .detail {
     padding-left: 10px;
 
+}
+
+img{
+    width: 300px;
+    height: 300px;
 }
 </style>
