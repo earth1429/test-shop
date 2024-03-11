@@ -9,4 +9,8 @@ export default defineNuxtConfig({
       ]
     }
   },
+  error: {
+    statusCode: 404,
+    message: 'Page not found'
+  },
 })
